@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2023 S6 CLASS FOOT BALL TEAM</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            /* Apply to the entire home section */
+#home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Gradient overlay for better readability */
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  z-index: 0;
+}
+
+/* Overlay content styling */
+#home div {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding-top: 20vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Heading style */
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Paragraph style */
+#home p {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effects */
+#home h1:hover,
+#home p:hover {
+  transform: scale(1.05);
+  color: #ffd700;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+  #home p {
+    font-size: 1.2rem;
+  }
+}
+/* Navigation Bar Styling */
+.navbar {
+  background: linear-gradient(to right, #1a1a1a, #333);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Team Name */
+.nav-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+/* Developer Credit */
+.nav-credit {
+  font-size: 0.9rem;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+/* /* Base Navbar Styling */
+.navbar {
+  background: linear-gradient(to right, #1a1a1a, #333);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Brand and Credit */
+.nav-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.nav-credit {
+  font-size: 0.9rem;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    padding: 1rem 0;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-credit {
+    display: none;
+  }
+}
+ */
+
+/* Global Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #00050e, #9ea6bc);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  overflow-x: hidden;
+  cursor: none; /* Hide default cursor */
+}
+
+/* About Section Styling */
+#about {
+  max-width: 800px;
+  margin: 5rem auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+/* Gallery Section Container */
+#gallery {
+  padding: 4rem 2rem;
+  background: linear-gradient(to left, #001f4d, #66ccff);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+}
+
+/* Gallery Heading */
+#gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffd700;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Image Grid */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Individual Image Styling */
+.gallery-grid img {
+  display: inline-block;
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover Effects */
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffd700, 0 0 30px #ffa500;
+  border-color: #ffd700;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .gallery-grid img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Glowing Orange Cursor Dot */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: orange;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 10px orange, 0 0 20px orange;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+/* Hide default cursor */
+body {
+  cursor: none;
+  background: linear-gradient(to bottom right, #020919, #849cf3);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Main glowing dot */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: orange;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0 0 10px orange, 0 0 20px orange;
+  transform: translate(-50%, -50%);
+}
+
+/* Trail effect */
+.cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 165, 0, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  box-shadow: 0 0 8px rgba(255, 165, 0, 0.5);
+  transform: translate(-50%, -50%);
+  animation: fadeOut 0.6s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
+/* Sponsors Section Container */
+#sponsors {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #001f4d, #66ccff);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Section Title */
+#sponsors h2 {
+  font-size: 2.8rem;
+  color: #ffd700;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Sponsor Cards Layout */
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Individual Sponsor Card */
+.sponsor-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* Sponsor Image */
+.sponsor-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 3px solid #fff;
+}
+
+/* Sponsor Name */
+.sponsor-card p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* WhatsApp Link Styling */
+.sponsor-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.sponsor-card a:hover {
+  background-color: #1ebc5c;
+}
+
+/* Hover Effect on Card */
+.sponsor-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ffd700;
+}
+
+/* Team Leader Section */
+.team-leader {
+  margin-top: 4rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Team Leader Title */
+.team-leader h3 {
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+/* Team Leader Image */
+.team-leader img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 20px #ffd700;
+  margin-bottom: 1rem;
+}
+
+/* Team Leader Info */
+.team-leader p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* Team Leader WhatsApp Button */
+.team-leader a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.team-leader a:hover {
+  background-color: #1ebc5c;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .sponsor-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sponsor-card {
+    width: 90%;
+  }
+
+  .team-leader {
+    width: 90%;
+  }
+}
+/* Footer Styling */
+#site-footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 3px solid #ffd700;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Links */
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover Effects */
+.footer-link:hover {
+  color: #ffd700;
+  text-shadow: 0 0 5px #ffd700;
+}
+/* Membership Section Styling */
+#membership {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #001f4d, #66ccff);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Section Title */
+#membership h2 {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 2rem;
+}
+
+/* Form Styling */
+#membershipForm {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#membershipForm input,
+#membershipForm select {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+#membershipForm button {
+  padding: 0.8rem;
+  background-color: #ffd700;
+  color: #001f4d;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#membershipForm button:hover {
+  background-color: #ffa500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #membershipForm {
+    width: 90%;
+  }
+}
+
+
+
+
+
+        </style>
+
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+       <nav class="navbar">
+            <div class="nav-brand">2023 Class</div>
+
+            <!-- Hamburger Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#membership">Membership</a></li>
+            </ul>
+
+            <div class="nav-credit">Developed by Sutique Technologies</div>
+        </nav>
+
+
+
+        <section id="home" style="position: relative; height: 100vh; overflow: hidden;">
+            <!-- Background Video -->
+            <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+                <source src="01.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Overlay Content -->
+            <div style="position: relative; z-index: 1; text-align: center; color: white; padding-top: 20vh;">
+                <h1>Welcome to 2023 Class Football Team</h1>
+                <p>Passion. Teamwork. Victory. Join us on our journey through the 2025 season!</p>
+            </div>
+        </section>
+
+       <section id="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="7.jpg" alt="Team Photo">
+                <p>
+                The 2023 Football Team is a community-driven club focused on excellence, discipline, and sportsmanship. 
+                We bring together passionate players and fans to celebrate the spirit of the game and build a legacy of teamwork and resilience.
+                </p>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="6.jpg" alt="Match Day 1">
+                <img src="4.jpg" alt="Match Day 2">
+                <img src="3.jpg" alt="Match Day 3">
+                <img src="w1.jpg" alt="Match Day 4">
+                <img src="w2.jpg" alt="Match Day 5">
+                <img src="w3.jpg" alt="Match Day 6">
+                <img src="w5.jpg" alt="Match Day 7">
+                <img src="2.jpg" alt="Training Session">
+                <!-- Add more images -->
+            </div>
+        </section>
+        <section id="sponsors">
+            <h2>Our Sponsors</h2>
+
+            <div class="sponsor-logos">
+                <div class="sponsor-card">
+                <img src="g6.png" alt="Sponsor 1">
+                <p>Sponsor 1</p>
+                <a href="https://wa.me/256743736388" target="_blank">Contact via WhatsApp</a>
+                <p>Maker of High Quality suits for all occasions at affordable prices. Quality you can trust. 
+                </p>
+                </div>
+                <div class="sponsor-card">
+                <img src="88.jpg" alt="Sponsor 2">
+                <p>Sponsor 2</p>
+                <p>Rayking sounds : Expert artist in music and graphic design</p>
+                <a href="https://wa.me/256791050286" target="_blank">Contact via WhatsApp</a>
+                </div>
+                <div class="sponsor-card">
+                <img src="x1.png" alt="Sponsor 3">
+                <p>Sponsor 3</p>
+                <a href="https://wa.me/256784689633" target="_blank">Contact via WhatsApp</a>
+                <p> Data analyst, Web developer, Microsoft Office,System Analyst and designer, Software Development,  Research, Data entry, Python, Java, Javascript, Digital marketing and Tech consultation </p>
+                </div>
+            </div>
+
+            <div class="team-leader">
+                <h3>Team Leader</h3>
+                <img src="w.jpg" alt="Team Leader">
+                <p><strong>Mugabe Herve</strong></p>
+                <p>Founder & Captain of the 2023 s6 class Football Team</p>
+                <a href="https://wa.me/256750525404" target="_blank">Message Herve on WhatsApp</a>
+            </div>
+        </section>
+
+        <section id="membership">
+            <h2>Join the Team</h2>
+            <form id="membershipForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <select id="role" required>
+                <option value="">Select Role</option>
+                <option value="Fan">Fan</option>
+                <option value="Player">Player</option>
+                <option value="Volunteer">Volunteer</option>
+                </select>
+                <button><a href="https://wa.me/256750525404" target="_blank">Submit</a></button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+            <footer id="site-footer">
+            <p>&copy; 2023 Football Team. All rights reserved.</p>
+            <p>Follow us on 
+                <a href="#" class="footer-link">Facebook</a> | 
+                <a href="#" class="footer-link">Instagram</a> | 
+                <a href="#" class="footer-link">Twitter</a> | 
+                <a href="https://wa.me/256743736388" class="footer-link" target="_blank">WhatsApp</a>
+            </p>
+        </footer>
+
+
+
+
+
+
+
+    </body>
+    <script>
+        const dot = document.createElement('div');
+        dot.classList.add('cursor-dot');
+        document.body.appendChild(dot);
+
+        document.addEventListener('mousemove', e => {
+            dot.style.top = e.clientY + 'px';
+            dot.style.left = e.clientX + 'px';
+
+            const trail = document.createElement('div');
+            trail.classList.add('cursor-trail');
+            trail.style.top = e.clientY + 'px';
+            trail.style.left = e.clientX + 'px';
+            document.body.appendChild(trail);
+
+            setTimeout(() => {
+            trail.remove();
+            }, 600); // Match fadeOut duration
+        });
+        
+  function toggleMenu() {
+    const menu = document.getElementById('navMenu');
+    menu.classList.toggle('show');
+  }
+
+
+        
+        
+    </script>
+
+</html>
