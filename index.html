@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <style>
             /* Apply to the entire home section */
@@ -19,6 +20,57 @@
   padding: 2rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
+/* Base styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f4d;
+  padding: 1rem 2rem;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #001f4d;
+    padding: 1rem 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
 
 /* Gradient overlay for better readability */
 #home::before {
@@ -569,7 +621,85 @@ body {
   #membershipForm {
     width: 90%;
   }
+}/* Base Styling */
+.navbar2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f4d;
+  padding: 1rem 2rem;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.nav-credit {
+  font-size: 0.9rem;
+  color: #ccc;
+  font-style: italic;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+/* Dots Icon */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #001f4d;
+    padding: 1rem 0;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-credit {
+    display: none;
+  }
+}
+
+
 
 
 
@@ -580,21 +710,19 @@ body {
     </head>
     <body>
         <!-- Navigation Bar -->
-       <nav class="navbar">
+       <nav class="navbar2">
             <div class="nav-brand">2023 Class</div>
 
-            <!-- Hamburger Icon -->
-            <div class="hamburger" onclick="toggleMenu()">
-                &#9776;
-            </div>
+            <!-- Dots Icon -->
+            <div class="hamburger" onclick="toggleMenu()">⋮</div>
 
             <!-- Navigation Links -->
             <ul class="nav-links" id="navMenu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#sponsors">Sponsors</a></li>
-                <li><a href="#membership">Membership</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#sponsors">Sponsors</a></li>
+              <li><a href="#membership">Membership</a></li>
             </ul>
 
             <div class="nav-credit">Developed by Sutique Technologies</div>
@@ -618,9 +746,26 @@ body {
 
        <section id="about">
             <h2>About Us</h2>
+            <style>
+  .team-photo {
+    width: 120px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 12px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds depth */
+    border: 2px solid #ddd; /* Optional: subtle border */
+    transition: transform 0.3s ease;
+  }
+
+  .team-photo:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+</style>
+
+<img src="7.jpg" alt="Team Photo" class="team-photo">
+
             <div class="about-content">
-                <img src="7.jpg" alt="Team Photo">
-                <p>
+                <!-- <img src="7.jpg" alt="Team Photo"> -->
+                <p style="color:orange">
                 The 2023 Football Team is a community-driven club focused on excellence, discipline, and sportsmanship. 
                 We bring together passionate players and fans to celebrate the spirit of the game and build a legacy of teamwork and resilience.
                 </p>
@@ -667,10 +812,17 @@ body {
             </div>
 
             <div class="team-leader">
-                <h3>Team Leader</h3>
+                <h3>Team Founder</h3>
+                <img src="fl.jpg" alt="Team Leader">
+                <p><strong>Kintu Samuel</strong></p>
+                <p>Founder of the 2023 s6 class Football Team</p>
+                <a href="https://wa.me/256755387404" target="_blank">Message Flix on WhatsApp</a>
+            </div>
+            <div class="team-leader">
+                <h3>Team Captain</h3>
                 <img src="w.jpg" alt="Team Leader">
                 <p><strong>Mugabe Herve</strong></p>
-                <p>Founder & Captain of the 2023 s6 class Football Team</p>
+                <p>Captain of the 2023 s6 class Football Team</p>
                 <a href="https://wa.me/256750525404" target="_blank">Message Herve on WhatsApp</a>
             </div>
         </section>
@@ -686,7 +838,12 @@ body {
                 <option value="Player">Player</option>
                 <option value="Volunteer">Volunteer</option>
                 </select>
-                <button><a href="https://wa.me/256750525404" target="_blank">Submit</a></button>
+                <button>
+                  <a href="https://wa.me/256750525404?text=Hello%20I%20am%20interested%20in%20your%20services" target="_blank">
+                    Submit
+                  </a>
+                </button>
+
             </form>
         </section>
 
@@ -728,10 +885,28 @@ body {
             }, 600); // Match fadeOut duration
         });
         
+  
   function toggleMenu() {
     const menu = document.getElementById('navMenu');
     menu.classList.toggle('show');
   }
+
+  // Auto-close menu when a link is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('navMenu').classList.remove('show');
+    });
+  });
+  function sendToWhatsApp() {
+  const message = document.getElementById("whatsappMessage").value;
+  const phoneNumber = "256750525404";
+  const encodedMessage = encodeURIComponent(message);
+  const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  window.open(url, "_blank");
+}
+
+
+
 
 
         
